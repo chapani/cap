@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Calligraphy Along Path</_name>
+    <id>chapani.me</id>
+    <dependency type="executable" location="extensions">calligraphyalongpath.py</dependency>
+    <dependency type="executable" location="extensions">inkex.py</dependency>
+    <param name="pwidth" type="float" min="0.1" max="50.0" _gui-text="Pattern Width:">0.4</param>
+    <param name="pheight" type="float" min="1.0" max="100.0" _gui-text="Pattern Height:                                ">4.0</param>
+    <param name="pangle" type="int" min="0" max="180" _gui-text="Pattern Angle:">30</param>
+    <effect>
+    <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Generate from Path"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">calligraphyalongpath.py</command>
+    </script>
+</inkscape-extension>
